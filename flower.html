@@ -1,0 +1,100 @@
+<!DOCTYPE >
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flower Game</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #eef7ea; }
+    h1 { color: #2d6a4f; }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #95d5b2;
+    }
+    .flex-container > div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    #field { margin-top: 20px; }
+    .row { display: flex; justify-content: center; }
+    .location { width: 80px; height: 80px; margin: 2px; cursor: pointer; }
+    .location img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+
+    @media (max-width: 600px) {
+      .flex-container { flex-direction: column; background-color: #b7e4c7; }
+      .location { width: 50px; height: 50px; }
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Noshitha finds avians</h1>
+
+  <p>Click on the locations to find the flowers, watch out for the poison ivy</p>
+  <p id="locations">Number of locations checked is zero.</p>
+  <p id="score">Score is zero.</p>
+  <p>Click for help.</p>
+  <p id="help">Help report</p>
+
+  <div id="field">
+  <div class="row">
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+  </div>
+   <div class="row">
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+  </div>
+    <div class="row">
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+
+  </div>
+  <div class="row">
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+  </div>
+    <div class="row">
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+  </div>
+  </div>
+    <div class="row">
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+  </div>
+</div>
+
+</body>
+
+</html>

@@ -23,14 +23,35 @@
 
 <script>
   let haltTime = undefined;
-
   function recordTime() {
-    haltTime = Date.now();
-    console.log(haltTime);
+  haltTime = Date.now();
+  console.log(haltTime);
+}
+
+function beginTime() {
+  for (let i = 0; i < 6; i++) {
+    setTimeout(function () {
+      document.getElementById("counter").innerHTML = i;
+    }, (5 - i) * 1000);
   }
 
-  document.getElementById("haltButton").onclick = recordTime;
-  </script>
+  setTimeout(function () {
+    if (haltTime === undefined) {
+      document.getElementById("target").innerHTML = "Not soon enough";
+    } else {
+      const targetTime = Date.now();
+      const difference = targetTime - haltTime;
+      document.getElementById("target").innerHTML = "Time was " + difference;
+    }
+  }, 5000);
+}
+
+document.getElementById("haltButton").onclick = recordTime;
+document.getElementById("goButton").onclick = beginTime;
+</script>
+
+
+
   <button type="button"
   class="btn btn-primary"
   onclick="buttonPress2()">

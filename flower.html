@@ -1,4 +1,4 @@
-<!DOCTYPE >
+<!DOCTYPE html >
 <html>
 <head>
   <meta charset="UTF-8">
@@ -36,65 +36,150 @@
 <body>
   <h1>Noshitha finds avians</h1>
 
-  <p>Click on the locations to find the flowers, watch out for the poison ivy</p>
-  <p id="locations">Number of locations checked is zero.</p>
-  <p id="score">Score is zero.</p>
-  <p>Click for help.</p>
-  <p id="help">Help report</p>
+   <div class="flex-container">
+    <div>Click on the locations to find the flowers, watch out for the poison ivy</div>
+    <div id="locations">Number of locations checked is zero.</div>
+    <div id="score">Score is zero.</div>
+    <div><button onclick="document.getElementById('help').textContent = help()">Click for help.</button></div>
+    <div id="help">Help report</div>
+  </div>
 
   <div id="field">
-  <div class="row">
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-  </div>
-   <div class="row">
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-  </div>
     <div class="row">
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
+      <div class="location"><img id="img0" src="TREE.jpg" alt="TREE" onclick="check(0)"></div>
+      <div class="location"><img id="img1" src="TREE.jpg" alt="TREE" onclick="check(1)"></div>
+      <div class="location"><img id="img2" src="TREE.jpg" alt="TREE" onclick="check(2)"></div>
+      <div class="location"><img id="img3" src="TREE.jpg" alt="TREE" onclick="check(3)"></div>
+      <div class="location"><img id="img4" src="TREE.jpg" alt="TREE" onclick="check(4)"></div>
+      <div class="location"><img id="img5" src="TREE.jpg" alt="TREE" onclick="check(5)"></div>
+    </div>
+    <div class="row">
+      <div class="location"><img id="img6" src="TREE.jpg" alt="TREE" onclick="check(6)"></div>
+      <div class="location"><img id="img7" src="TREE.jpg" alt="TREE" onclick="check(7)"></div>
+      <div class="location"><img id="img8" src="TREE.jpg" alt="TREE" onclick="check(8)"></div>
+      <div class="location"><img id="img9" src="TREE.jpg" alt="TREE" onclick="check(9)"></div>
+      <div class="location"><img id="img10" src="TREE.jpg" alt="TREE" onclick="check(10)"></div>
+      <div class="location"><img id="img11" src="TREE.jpg" alt="TREE" onclick="check(11)"></div>
+    </div>
+    <div class="row">
+      <div class="location"><img id="img12" src="TREE.jpg" alt="TREE" onclick="check(12)"></div>
+      <div class="location"><img id="img13" src="TREE.jpg" alt="TREE" onclick="check(13)"></div>
+      <div class="location"><img id="img14" src="TREE.jpg" alt="TREE" onclick="check(14)"></div>
+      <div class="location"><img id="img15" src="TREE.jpg" alt="TREE" onclick="check(15)"></div>
+      <div class="location"><img id="img16" src="TREE.jpg" alt="TREE" onclick="check(16)"></div>
+      <div class="location"><img id="img17" src="TREE.jpg" alt="TREE" onclick="check(17)"></div>
+    </div>
+    <div class="row">
+      <div class="location"><img id="img18" src="TREE.jpg" alt="TREE" onclick="check(18)"></div>
+      <div class="location"><img id="img19" src="TREE.jpg" alt="TREE" onclick="check(19)"></div>
+      <div class="location"><img id="img20" src="TREE.jpg" alt="TREE" onclick="check(20)"></div>
+      <div class="location"><img id="img21" src="TREE.jpg" alt="TREE" onclick="check(21)"></div>
+      <div class="location"><img id="img22" src="TREE.jpg" alt="TREE" onclick="check(22)"></div>
+      <div class="location"><img id="img23" src="TREE.jpg" alt="TREE" onclick="check(23)"></div>
+    </div>
+    <div class="row">
+      <div class="location"><img id="img24" src="TREE.jpg" alt="TREE" onclick="check(24)"></div>
+      <div class="location"><img id="img25" src="TREE.jpg" alt="TREE" onclick="check(25)"></div>
+      <div class="location"><img id="img26" src="TREE.jpg" alt="TREE" onclick="check(26)"></div>
+      <div class="location"><img id="img27" src="TREE.jpg" alt="TREE" onclick="check(27)"></div>
+      <div class="location"><img id="img28" src="TREE.jpg" alt="TREE" onclick="check(28)"></div>
+      <div class="location"><img id="img29" src="TREE.jpg" alt="TREE" onclick="check(29)"></div>
+    </div>
+    <div class="row">
+      <div class="location"><img id="img30" src="TREE.jpg" alt="TREE" onclick="check(30)"></div>
+      <div class="location"><img id="img31" src="TREE.jpg" alt="TREE" onclick="check(31)"></div>
+      <div class="location"><img id="img32" src="TREE.jpg" alt="TREE" onclick="check(32)"></div>
+      <div class="location"><img id="img33" src="TREE.jpg" alt="TREE" onclick="check(33)"></div>
+      <div class="location"><img id="img34" src="TREE.jpg" alt="TREE" onclick="check(34)"></div>
+      <div class="location"><img id="img35" src="TREE.jpg" alt="TREE" onclick="check(35)"></div>
+    </div>
+  </div>
 
-  </div>
-  <div class="row">
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-  </div>
-    <div class="row">
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-  </div>
-  </div>
-    <div class="row">
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-    <div class="location"><img src="TREE.jpg" alt="TREE"></div>
-  </div>
-</div>
+<script>
+const ids = [];
+for (let i = 0; i < 36; i++) ids.push("img" + i);
 
+let score = 0;
+let locationsVisited = 0;
+let lastLocation = 0;
+const poisonLocation = 19;
+const roseLocation = 14;
+const lilyLocations = [3, 25];
+const daisyLocations = [2, 5, 11, 20, 21];
+let gameOver = false;
+
+function check(position) {
+  if (gameOver) return;
+
+  const img = document.getElementById(ids[position]);
+
+  if (position === poisonLocation) {
+    img.src = "poisonivy.jpg";
+    img.alt = "poison ivy";
+    img.onclick = null;
+    score -= 4;
+    gameOver = true;
+  } else if (position === roseLocation) {
+    img.src = "Rose.jpg";
+    img.alt = "rose";
+    img.onclick = null;
+    score += 4;
+  } else if (lilyLocations.includes(position)) {
+    img.src = "Lily.jpg";
+    img.alt = "lily";
+    img.onclick = null;
+    score += 2;
+  } else if (daisyLocations.includes(position)) {
+    img.src = "Daisy.jpg";
+    img.alt = "daisy";
+    img.onclick = null;
+    score += 1;
+  }
+
+  locationsVisited++;
+  lastLocation = position;
+
+  document.getElementById("locations").textContent =
+  "Number of locations checked is " + locationsVisited + ".";
+  document.getElementById("score").textContent = "Score is " + score + ".";
+}
+
+function help() {
+  const row = Math.floor(lastLocation / 6);
+  const col = lastLocation % 6;
+  const left  = row * 6 + (col + 5) % 6;
+  const right = row * 6 + (col + 1) % 6;
+  const up    = (lastLocation + 30) % 36;
+  const down  = (lastLocation + 6) % 36;
+  const four = [left, right, up, down];
+
+  for (let i = 0; i < four.length; i++) {
+    if (daisyLocations.includes(four[i])) {
+      return "cold";
+    }
+  }
+
+  const nine = [];
+  for (let dr = -1; dr <= 1; dr++) {
+    for (let dc = -1; dc <= 1; dc++) {
+      const r = row + dr;
+      const c = col + dc;
+      if (r >= 0 && r < 6 && c >= 0 && c < 6) {
+        nine.push(r * 6 + c);
+      }
+    }
+  }
+
+  if (nine.includes(roseLocation)) {
+    return "hot";
+  }
+  if (nine.includes(poisonLocation)) {
+    return "watch out";
+  }
+
+  return "warm";
+
+};
+</script>
 </body>
-
 </html>

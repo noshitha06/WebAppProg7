@@ -29,7 +29,7 @@ with divs</title>
 	<h2>Noshitha builds list with divs</h2>
     <input type="text" id="itemInput">
 
-	<div class="flex-container" id="target">
+	<div class="flex-container" id="container">
 		  <div> 1</div>   
 		  <div> 2</div>  
 		  <div> 3</div>  
@@ -48,7 +48,32 @@ with divs</title>
   document.getElementById("container").appendChild(newDiv); 
 }
 </script>
+<button onclick="addFront()">Add front</button>
+<button onclick="removeEveryOther()">Remove</button>
+<script>
+function removeEveryOther() {
+  const divListItems = document.getElementsByClassName("divlist");
 
+  if (divListItems.length > 0) {
+    for (let i = divListItems.length - 1; i >= 0; i--) {
+      if (i % 2 === 0) {
+        divListItems[i].remove();
+      }
+    }
+  }
+}
+  </script>
+<script>
+	function addFront() {
+  const newDiv = document.createElement("div");            
+  const input = document.getElementById("itemInput");
+  newDiv.innerHTML = input.value;
+  newDiv.className = "divlist";
+
+  const container = document.getElementById("container");  
+  container.insertBefore(newDiv, container.firstChild);    
+}
+</script>
 </body>
 <script>
 	function makeNewDiv(){
@@ -60,4 +85,4 @@ with divs</title>
 		container.appendChild(element)
 	}
 </script>
-</html>	
+</html>

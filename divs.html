@@ -85,4 +85,27 @@ function removeEveryOther() {
 		container.appendChild(element)
 	}
 </script>
+<button onclick="shuffle()">shuffle</button>
+<script>
+function shuffle() {
+  const items = document.getElementsByClassName("divlist");
+  if (items.length < 2) return;                   
+
+  const i = randomInt(items.length);
+  let j = randomInt(items.length);
+  while (j === i) {
+    j = randomInt(items.length);                 
+  }
+
+  const a = items[i];
+  const b = items[j];
+  const container = document.getElementById("container");
+
+  const placeholder = document.createElement("div");  
+  container.replaceChild(placeholder, a);             
+  container.replaceChild(a, b);                      
+  container.replaceChild(b, placeholder);            
+}
+
+</script>
 </html>

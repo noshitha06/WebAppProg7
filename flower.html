@@ -181,5 +181,48 @@ function help() {
 
 };
 </script>
+
+<script>
+	function randomInt(n) {
+  return Math.floor(Math.random() * n);
+}
+const used = [];
+function uniqueRandom() {
+  let n = randomInt(36);
+  while (used.includes(n)) {
+    n = randomInt(36);      
+  }
+  used.push(n);
+  return n;
+}
+
+let poisonLocation = uniqueRandom();
+let roseLocation = uniqueRandom();
+const lilyLocations = [uniqueRandom(), uniqueRandom()];
+const daisyLocations = [uniqueRandom(), uniqueRandom(), uniqueRandom(), uniqueRandom(), uniqueRandom()];
+
+function moveRose() {
+  const row = Math.floor(roseLocation / 6);
+  const col = roseLocation % 6;
+  let moved = false;
+
+  while (!moved) {
+    const dir = randomInt(4);                     
+    if (dir === 0 && row > 0)      { roseLocation -= 6; moved = true; }
+    else if (dir === 1 && row < 5) { roseLocation += 6; moved = true; }
+    else if (dir === 2 && col < 5) { roseLocation += 1; moved = true; }
+    else if (dir === 3 && col > 0) { roseLocation -= 1; moved = true; }
+    
+  }
+  if (!gameOver && !roseFound) {
+  moveRose();
+  if (roseLocation === position) {     
+    gameOver = true;
+    document.getElementById("help").textContent = "The rose landed on you. Game over!";
+  }
+}
+}
+</script>
+</script>
 </body>
 </html>
